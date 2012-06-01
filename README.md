@@ -17,7 +17,6 @@ The method just print a date in a "pretty" format given the brower locale settin
 If your locale were 'es-ES', you should see:
 
 ``` javascript
-    prettyDate("2008-01-28T20:24:17Z") // => "2 hours ago"
     prettyDate("2008-01-28T20:24:17Z") // => "hace 2 horas"
     prettyDate("2008-01-27T22:24:17Z") // => "Ayer"
     prettyDate("2008-01-26T22:24:17Z") // => "hace 2 dias"
