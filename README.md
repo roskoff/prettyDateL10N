@@ -32,9 +32,18 @@ Note that prettyDate only cares about dates in the past (by far the most common 
 
 * **demo.html** (Some examples of date conversion using basic DOM manipulation.)
 
+## Supported languages
+
+* en-US: English
+* es-ES: Spanish
+* fr-FR: French
+* it-IT: Italian
+
+Fork me and make a pull request with your preferred language!
+
 ## Example Usage
 
-In the following examples I make all the anchors on the site, that have a title with a date in it, have a pretty date as their inner text. Additionally, I continue to update the links every 5 seconds after the page has loaded.
+In the following examples I make all the anchors on the site, that have a title with a date in it, have a pretty date as their inner text. Additionally, I continue to update the links every 5 seconds after the page has loaded. Remember that the locale language will be selected based on your browser locale settings.
 
 With plain DOM:
 
