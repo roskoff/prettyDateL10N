@@ -1,0 +1,99 @@
+
+<script src="pretty.js"></script>
+<script>
+function ISODateString(d){
+    function pad(n){return n<10 ? '0'+n : n}
+        return d.getFullYear()+'-'
+          + pad(d.getMonth()+1)+'-'
+          + pad(d.getDate())+'T'
+          + pad(d.getHours())+':'
+          + pad(d.getMinutes())+':'
+          + pad(d.getSeconds())+'Z'}
+
+function initLinks(){
+    var links = document.getElementsByTagName("a");
+    d = new Date();
+    for ( var i = 0; i < links.length; i++ ){
+        ii = links.length - i - 1;
+        if ( links[ii].title ) {
+            d = new Date(d.getTime() - (i * i * i * 1000) * 1000);
+            links[ii].title = ISODateString(d);
+            links[ii].innerHTML = d;
+        }
+    }
+}
+
+prettyLinks = function(){
+    var links = document.getElementsByTagName("a");
+    for ( var i = 0; i < links.length; i++ )
+        if ( links[i].title ) {
+            var date = prettyDate(links[i].title);
+            if ( date )
+                links[i].innerHTML = date;
+        }
+};
+window.onload = function(){
+    initLinks();
+    prettyLinks();
+}    
+setInterval(prettyLinks, 5000);
+</script>
+<ul>
+<li class="entry" id="post57">
+	<p>blah blah blah...</p>
+	<small class="extra">
+		Posted <span class="time"><a href="#" title="-"><span></span></a></span>
+		by <span class="author"><a href="/john/">John Resig</a></span>
+	</small>
+</li>
+<li class="entry" id="post57">
+	<p>blah blah blah...</p>
+	<small class="extra">
+		Posted <span class="time"><a href="#" title="-"><span></span></a></span>
+		by <span class="author"><a href="/john/">John Resig</a></span>
+	</small>
+</li>
+<li class="entry" id="post57">
+	<p>blah blah blah...</p>
+	<small class="extra">
+		Posted <span class="time"><a href="#" title="-"><span></span></a></span>
+		by <span class="author"><a href="/john/">John Resig</a></span>
+	</small>
+</li>
+<li class="entry" id="post57">
+	<p>blah blah blah...</p>
+	<small class="extra">
+		Posted <span class="time"><a href="#" title="-"><span></span></a></span>
+		by <span class="author"><a href="/john/">John Resig</a></span>
+	</small>
+</li>
+<li class="entry" id="post57">
+	<p>blah blah blah...</p>
+	<small class="extra">
+		Posted <span class="time"><a href="#" title="-"><span></span></a></span>
+		by <span class="author"><a href="/john/">John Resig</a></span>
+	</small>
+</li>
+<li class="entry" id="post57">
+	<p>blah blah blah...</p>
+	<small class="extra">
+		Posted <span class="time"><a href="#" title="-"><span></span></a></span>
+		by <span class="author"><a href="/john/">John Resig</a></span>
+	</small>
+</li>
+<li class="entry" id="post57">
+	<p>blah blah blah...</p>
+	<small class="extra">
+		Posted <span class="time"><a href="#" title="-"><span></span></a></span>
+		by <span class="author"><a href="/john/">John Resig</a></span>
+	</small>
+</li>
+<li class="entry" id="post57">
+	<p>blah blah blah...</p>
+	<small class="extra">
+		Posted <span class="time"><a href="#" title="-"><span></span></a></span>
+		by <span class="author"><a href="/john/">John Resig</a></span>
+	</small>
+</li>
+</ul>
+
