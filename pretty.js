@@ -3,7 +3,7 @@
  * Copyright (c) 2011 John Resig (ejohn.org)
  * Licensed under the MIT and GPL licenses.
  *
- * Added localization facilities by Eliseo Ocampos
+ * Added localization features by Eliseo Ocampos
  */
 
 // Takes an ISO time and returns a string representing how

@@ -73,5 +73,5 @@ With jQuery:
     Copyright (c) 2011 John Resig (ejohn.org)
     Licensed under the MIT and GPL licenses.
     
-    Added localization facilities by Eliseo Ocampos
+    Added localization features by Eliseo Ocampos
 
